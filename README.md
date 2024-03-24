@@ -27,6 +27,12 @@ A step by step series of examples that tell you how to get a development environ
 5. Start the server
    ionic serve
 
+## Work in progress
+ This is still work in progress if given more time, I could spend some more time on the UI and refine it further.
+ There is still some work needs to be done for the header as I was having trouble with it's background color.
+ But since I had 2 days to finish this and backend, I had to submit it as it is.
+
+
 ## Built With
 
 - [Angular](https://angular.io/) - The web framework used
