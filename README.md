@@ -19,7 +19,7 @@ What things you need to install the software and how to install them:
 A step by step series of examples that tell you how to get a development environment running:
 
 1. Clone the repo
-   [git clone https://github.com/sidsaxena0/test-frontend-ionic.git](https://github.com/sidsaxena0/test-frontend-ionic.git)https://github.com/sidsaxena0/test-frontend-ionic.git
+   [git clone https://github.com/sidsaxena0/test-frontend-ionic.git](https://github.com/sidsaxena0/test-frontend-ionic.git)
 2. Navigate into the cloned repository
    cd test-frontend-ionic
 3. Install NPM packages
