@@ -1,0 +1,151 @@
+
+
+input[type=text]{
+  width:100%;
+  border:1px solid #c4c4c4;
+  border-radius:6px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 2px 0px;
+
+}
+
+input[type=email]{
+  width:100%;
+  border:1px solid #c4c4c4;
+  border-radius:6px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 2px 0px;
+}
+select {
+  width:100%;
+  border:1px solid #c4c4c4;
+  border-radius:6px;
+  margin:8px 0;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 2px 0px;
+
+}
+
+input[type=text]:focus{
+  border-color: #ab95f9;
+  box-shadow:0 0 2px 0 #ab95f9;
+}
+
+.subscribe-cont{
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  flex-wrap: wrap;
+  @media (max-width: 992px) {
+    margin: 10px;
+  }
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.label{
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+.subscribe-section{
+  padding: 25px;
+  width: 60%;
+  flex-grow: 1;
+
+}
+
+.summary-section{
+  padding: 25px;
+  flex-grow: 1;
+  background: #f1edfe;
+  border-radius: 0 12px 12px 0;
+}
+
+
+.chips{
+  border-radius: 20px;
+  border: 1px solid #efefef;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.chips-selected{
+  border-radius: 20px;
+  border: 1px solid #6633ff;
+  color: #6633ff;
+  background: #f4f1fe ;
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.chips-cont{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.m-l-5{
+  margin-left: 5px;
+}
+
+
+.items-cont{
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 25px;
+
+  .small-text{
+    font-size: 14px;
+    color: darkgrey;
+  }
+}
+
+.f-s-12{
+  font-size: 12px;
+}
+
+.select-input{
+  width:100%;
+  border:1px solid #c4c4c4;
+  border-radius:6px;
+  margin:8px 5px;
+  outline:none;
+  padding:8px;
+  box-sizing:border-box;
+  transition:.3s;
+  background: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 2px 0px;
+  cursor: pointer;
+  flex-grow: 1;
+
+}
