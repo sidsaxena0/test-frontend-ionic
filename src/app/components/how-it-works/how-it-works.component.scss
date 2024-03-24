@@ -1,0 +1,60 @@
+.bg-img{
+  background-color: #fff9e6;
+
+}
+
+.bg-color {
+  background-image: url("/assets/images/how-it-works-bg.png");
+  color: #000;
+  text-align: center;
+
+  @media (max-width: 992px) {
+    background-image: none; /* Remove the background image at medium (LG) resolutions and below */
+  }
+}
+.max-width{
+  //max-width: 1200px;
+  //margin: auto;
+
+}
+
+.step-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .step-item{
+    flex-basis: 420px;
+    padding: 25px;
+
+  }
+}
+
+.step-img{
+  width: 100px;
+}
+
+.title-text{
+  font-size: 48px;
+  font-weight: bold;
+  max-width: 750px;
+  margin: auto;
+
+}
+
+.subtitle-text{
+  font-size: 22px;
+  max-width: 800px;
+  margin: auto;
+
+}
+
+.step-title{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.step-desc{
+  font-size: 18px;
+}
+
