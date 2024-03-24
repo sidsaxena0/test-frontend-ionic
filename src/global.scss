@@ -24,9 +24,10 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .subscribe-button {
-  width: 180px;
+  width: 100%;
   font-size: 19px;
   text-align: center;
   font-weight: bold;
@@ -38,4 +39,11 @@
   border: 1px solid #ab95f9;
 
 }
+.w-180{
+  width: 180px;
+}
 
+*{
+  font-family: "Nunito", sans-serif;
+
+}

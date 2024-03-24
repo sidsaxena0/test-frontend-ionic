@@ -1,0 +1,213 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Logo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="subscribe-cont mt-5 mb-5">
+    <div class="subscribe-section">
+      <div class="title">
+        Subscribe
+      </div>
+      <div class="label">
+        to our Monthly Surprise Box
+      </div>
+
+      <div class="d-flex f-s-12 mt-3">
+        <span> Cart </span>
+        <span class="m-l-5"> > </span>
+        <span class="m-l-5"> Shipping </span>
+        <span class="m-l-5"> > </span>
+        <span class="m-l-5"> Payment </span>
+        <span class="m-l-5"> > </span>
+        <span class="m-l-5"> Payment </span>
+
+      </div>
+
+      <hr>
+
+
+      <form>
+        <div>
+          <div class="title">
+            Contact Information
+          </div>
+          <div>
+            <label class="label">Your Name</label>
+            <input placeholder="e.g Osama Aishathri" type="text" class="input-text">
+          </div>
+
+          <div>
+            <label class="label">Email</label>
+            <input placeholder="Osama@gmai.com" type="email" class="input-text">
+          </div>
+        </div>
+
+        <div>
+          <div class="title">Child's Information</div>
+
+          <div>
+            <label class="label">Child's Full Name</label>
+            <input placeholder="e.g Sarah Mohammad" type="text" class="input-text">
+          </div>
+          <div>
+            <label class="label">Child's Date of Birth</label>
+            <div class="d-flex">
+              <div class="flex-grow-1">
+                <select>
+                    <option value="" disabled selected hidden>Day</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                </select>
+<!--                <input placeholder="Date" type="text" class="input-text">-->
+              </div>
+              <div class="m-l-5 flex-grow-1">
+                <select>
+                    <option value="" disabled selected hidden>Month</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                </select>
+<!--                <input placeholder="Month" type="text" class="input-text">-->
+              </div>
+              <div class="m-l-5 flex-grow-1">
+<!--                <input placeholder="Year" type="text" class="input-text">-->
+                <select>
+                    <option value="" disabled selected hidden>Year</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                  <option>2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <label>Grade</label>
+<!--              <input placeholder="e.g Grade 2" type="text" class="input-text">-->
+              <select>
+                <option value="" disabled selected hidden>Grade</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 2</option>
+                <option>Grade 2</option>
+                <option>Grade 2</option>
+              </select>
+
+            </div>
+          </div>
+
+
+          <div>
+            <label>Gender</label>
+            <!-- HTML template -->
+            <div class="d-flex">
+              <div class="select-input" (click)="selectOption('boy')" [class.selected]="selectedOption === 'boy'">
+                <div class="d-flex justify-content-between">
+                  <div>Boy</div>
+                  <div>
+                    <svg [style.fill]="selectedOption === 'boy' ? '#6633ff' : '#aaa'" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="select-input m-l-5" (click)="selectOption('girl')" [class.selected]="selectedOption === 'girl'">
+                <div class="d-flex justify-content-between">
+                  <div>Girl</div>
+                  <div>
+                    <svg [style.fill]="selectedOption === 'girl' ? '#6633ff' : '#aaa'" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <div class="title">
+              As a parent select any 3 topics
+            </div>
+            <div class="chips-cont">
+              <span [class.chips]="!isSelected('Arabic')" [class.chips-selected]="isSelected('Arabic')" (click)="toggleSelected('Arabic')">Arabic</span>
+              <span [class.chips]="!isSelected('Islamic')" [class.chips-selected]="isSelected('Islamic')" (click)="toggleSelected('Islamic')">Islamic</span>
+              <span [class.chips]="!isSelected('English')" [class.chips-selected]="isSelected('English')" (click)="toggleSelected('English')">English</span>
+              <span [class.chips]="!isSelected('History')" [class.chips-selected]="isSelected('History')" (click)="toggleSelected('History')">History</span>
+              <span [class.chips]="!isSelected('Sports')" [class.chips-selected]="isSelected('Sports')" (click)="toggleSelected('Sports')">Sports</span>
+            </div>
+          </div>
+
+
+        </div>
+
+      </form>
+
+      <div class="mt-5">
+        <button class="subscribe-button">Continue to payment</button>
+      </div>
+    </div>
+
+    <div class="summary-section">
+      <div>
+        <div class="title">Summary</div>
+        <div class="label">of your Monthly surprise box</div>
+      </div>
+
+      <div class="items-cont">
+        <div class="d-flex justify-content-between">
+          <div>
+            <div class="fw-bold">Mystery Box</div>
+            <div class="small-text">x 1</div>
+          </div>
+          <div>
+            <div>SAR <span class="fw-bold">456</span></div>
+            <div class="small-text ion-text-right">Monthly</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="d-flex justify-content-between">
+          <div>Subtotal</div>
+          <div>SAR <span class="fw-bold">456</span></div>
+        </div>
+        <div class="d-flex justify-content-between mt-2">
+          <div>Shipping</div>
+          <div>Free</div>
+        </div>
+        <div class="d-flex justify-content-between mt-2">
+          <div>Taxes</div>
+          <div>SAR <span class="fw-bold">4.0</span></div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div>
+        <div class="d-flex justify-content-between">
+          <div>Total</div>
+          <div>SAR <span class="fw-bold">460</span></div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+</ion-content>
