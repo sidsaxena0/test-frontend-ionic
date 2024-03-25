@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
 
 @Component({
@@ -11,10 +11,10 @@ import {RouterLink} from "@angular/router";
     RouterLink
   ]
 })
-export class DiscoverSectionComponent  implements OnInit {
+export class DiscoverSectionComponent   {
 
   constructor() { }
 
-  ngOnInit() {}
+
 
 }
